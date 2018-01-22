@@ -1,0 +1,1478 @@
+[ 2017-04-01T14:22:48+08:00 ] 183.13.190.242 /wz170315/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T14:31:42+08:00 ] 183.13.190.242 /wz170315/index.php?m=query
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T14:33:10+08:00 ] 183.13.190.242 /wz170315/index.php?m=query
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = 58 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_input` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `type_id` = 58 ) AND ( `show_switch` = 2 ) AND (  (`input_pid` is null)  ) ORDER BY date asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `type_id` = 58 ) AND ( `show_switch` = 2 ) AND ( `required_switch` = 2 ) AND (  (`input_pid` is null)  ) ORDER BY date asc  [ RunTime:0.015625s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\wz170315\Index\Runtime\Cache\5d34b54a09dc542788cbf19dbd81abd8.php 第 67 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T14:33:38+08:00 ] 183.13.190.242 /wz170315/index.php?m=query
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = 58 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_input` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `type_id` = 58 ) AND ( `show_switch` = 2 ) AND (  (`input_pid` is null)  ) ORDER BY date asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `type_id` = 58 ) AND ( `show_switch` = 2 ) AND ( `required_switch` = 2 ) AND (  (`input_pid` is null)  ) ORDER BY date asc  [ RunTime:0.015625s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\wz170315\Index\Runtime\Cache\5d34b54a09dc542788cbf19dbd81abd8.php 第 67 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T14:33:58+08:00 ] 183.13.190.242 /wz170315/index.php?m=query
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = 58 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.015625s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_input` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `type_id` = 58 ) AND ( `show_switch` = 2 ) AND (  (`input_pid` is null)  ) ORDER BY date asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `type_id` = 58 ) AND ( `show_switch` = 2 ) AND ( `required_switch` = 2 ) AND (  (`input_pid` is null)  ) ORDER BY date asc  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\wz170315\Index\Runtime\Cache\5d34b54a09dc542788cbf19dbd81abd8.php 第 67 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T14:34:01+08:00 ] 183.13.190.242 /wz170315/index.php?m=query&a=details
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = 58 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_goods` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_goods` WHERE ( `goods_id` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T14:35:35+08:00 ] 183.13.190.242 /wz170315/index.php?m=query
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = 58 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_input` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `type_id` = 58 ) AND ( `show_switch` = 2 ) AND (  (`input_pid` is null)  ) ORDER BY date asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `type_id` = 58 ) AND ( `show_switch` = 2 ) AND ( `required_switch` = 2 ) AND (  (`input_pid` is null)  ) ORDER BY date asc  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\wz170315\Index\Runtime\Cache\5d34b54a09dc542788cbf19dbd81abd8.php 第 69 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T14:35:39+08:00 ] 183.13.190.242 /wz170315/index.php?m=query
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = 58 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.015625s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_input` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `type_id` = 58 ) AND ( `show_switch` = 2 ) AND (  (`input_pid` is null)  ) ORDER BY date asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `type_id` = 58 ) AND ( `show_switch` = 2 ) AND ( `required_switch` = 2 ) AND (  (`input_pid` is null)  ) ORDER BY date asc  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\wz170315\Index\Runtime\Cache\5d34b54a09dc542788cbf19dbd81abd8.php 第 69 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T14:35:40+08:00 ] 183.13.190.242 /wz170315/index.php?m=query&a=details&data%5Btype_id%5D=58&classify_id=&data%5Bdate%5D=1491028539&data%5Bname%5D=w&data%5Bquery_number%5D=x
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = 58 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_query` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `index_query` LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: goods_bigimg D:\WWW\wz170315\Index\Runtime\Cache\fd63167c33bf4bf7307b8b4895f96979.php 第 15 行.
+NOTIC: [8] Undefined index: goods_name D:\WWW\wz170315\Index\Runtime\Cache\fd63167c33bf4bf7307b8b4895f96979.php 第 16 行.
+NOTIC: [8] Undefined index: goods_content D:\WWW\wz170315\Index\Runtime\Cache\fd63167c33bf4bf7307b8b4895f96979.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T14:36:15+08:00 ] 183.13.190.242 /wz170315/index.php?m=query&a=details&data%5Btype_id%5D=58&classify_id=&data%5Bdate%5D=1491028539&data%5Bname%5D=w&data%5Bquery_number%5D=x
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = 58 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_query` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_query` LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: goods_bigimg D:\WWW\wz170315\Index\Runtime\Cache\fd63167c33bf4bf7307b8b4895f96979.php 第 15 行.
+NOTIC: [8] Undefined index: goods_name D:\WWW\wz170315\Index\Runtime\Cache\fd63167c33bf4bf7307b8b4895f96979.php 第 16 行.
+NOTIC: [8] Undefined index: goods_content D:\WWW\wz170315\Index\Runtime\Cache\fd63167c33bf4bf7307b8b4895f96979.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.015625s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T14:36:46+08:00 ] 183.13.190.242 /wz170315/index.php?m=query&a=details&data%5Btype_id%5D=58&classify_id=&data%5Bdate%5D=1491028539&data%5Bname%5D=w&data%5Bquery_number%5D=x
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = 58 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_query` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_query` WHERE ( `type_id` = 58 ) AND ( `date` = 1491028539 ) AND ( `name` = 'w' ) AND ( `query_number` = 'x' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: goods D:\WWW\wz170315\Index\Runtime\Cache\fd63167c33bf4bf7307b8b4895f96979.php 第 17 行.
+NOTIC: [8] Undefined variable: goods D:\WWW\wz170315\Index\Runtime\Cache\fd63167c33bf4bf7307b8b4895f96979.php 第 18 行.
+NOTIC: [8] Undefined variable: goods D:\WWW\wz170315\Index\Runtime\Cache\fd63167c33bf4bf7307b8b4895f96979.php 第 19 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T14:37:06+08:00 ] 183.13.190.242 /wz170315/index.php?m=query&a=details&data%5Btype_id%5D=58&classify_id=&data%5Bdate%5D=1491028539&data%5Bname%5D=w&data%5Bquery_number%5D=x
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = 58 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_query` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `index_query` WHERE ( `type_id` = 58 ) AND ( `date` = 1491028539 ) AND ( `name` = 'w' ) AND ( `query_number` = 'x' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: goods D:\WWW\wz170315\Index\Runtime\Cache\fd63167c33bf4bf7307b8b4895f96979.php 第 17 行.
+NOTIC: [8] Undefined variable: goods D:\WWW\wz170315\Index\Runtime\Cache\fd63167c33bf4bf7307b8b4895f96979.php 第 18 行.
+NOTIC: [8] Undefined variable: goods D:\WWW\wz170315\Index\Runtime\Cache\fd63167c33bf4bf7307b8b4895f96979.php 第 19 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T14:54:47+08:00 ] 183.13.190.242 /wz170315/index.php?m=query&a=details&data%5Btype_id%5D=58&classify_id=&data%5Bdate%5D=1491028539&data%5Bname%5D=w&data%5Bquery_number%5D=x
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = 58 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_query` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_query` WHERE ( `type_id` = 58 ) AND ( `date` = 1491028539 ) AND ( `name` = 'w' ) AND ( `query_number` = 'x' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.015625s ]
+INFO: [ view_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-04-01T14:55:00+08:00 ] 183.13.190.242 /wz170315/index.php?m=query&a=details&data%5Btype_id%5D=58&classify_id=&data%5Bdate%5D=1491028539&data%5Bname%5D=11&data%5Bquery_number%5D=2
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = 58 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_query` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_query` WHERE ( `type_id` = 58 ) AND ( `date` = 1491028539 ) AND ( `name` = '11' ) AND ( `query_number` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T14:55:15+08:00 ] 183.13.190.242 /wz170315/index.php?m=query&a=details&data%5Btype_id%5D=58&classify_id=&data%5Bdate%5D=1491028539&data%5Bname%5D=11&data%5Bquery_number%5D=2
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.015625s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = 58 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_query` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_query` WHERE ( `type_id` = 58 ) AND ( `date` = 1491028539 ) AND ( `name` = '11' ) AND ( `query_number` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T14:55:39+08:00 ] 183.13.190.242 /wz170315/index.php?m=query&a=details&data%5Btype_id%5D=58&classify_id=&data%5Bdate%5D=1491028539&data%5Bname%5D=11&data%5Bquery_number%5D=2
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = 58 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.015625s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_query` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_query` WHERE ( `type_id` = 58 ) AND ( `date` = 1491028539 ) AND ( `name` = '11' ) AND ( `query_number` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T14:55:40+08:00 ] 183.13.190.242 /wz170315/index.php?m=query&a=details&data%5Btype_id%5D=58&classify_id=&data%5Bdate%5D=1491028539&data%5Bname%5D=11&data%5Bquery_number%5D=2
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = 58 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_query` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_query` WHERE ( `type_id` = 58 ) AND ( `date` = 1491028539 ) AND ( `name` = '11' ) AND ( `query_number` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T14:55:44+08:00 ] 183.13.190.242 /wz170315/index.php?m=query&a=details&data%5Btype_id%5D=58&classify_id=&data%5Bdate%5D=1491028539&data%5Bname%5D=11&data%5Bquery_number%5D=2
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = 58 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_query` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_query` WHERE ( `type_id` = 58 ) AND ( `date` = 1491028539 ) AND ( `name` = '11' ) AND ( `query_number` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T14:55:51+08:00 ] 183.13.190.242 /wz170315/index.php?m=query&a=details&data%5Btype_id%5D=58&classify_id=&data%5Bdate%5D=1491028539&data%5Bname%5D=11&data%5Bquery_number%5D=2
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = 58 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.015625s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_query` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_query` WHERE ( `type_id` = 58 ) AND ( `date` = 1491028539 ) AND ( `name` = '11' ) AND ( `query_number` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T14:56:07+08:00 ] 183.13.190.242 /wz170315/index.php?m=query&a=details&data%5Btype_id%5D=58&classify_id=&data%5Bdate%5D=1491028539&data%5Bname%5D=11&data%5Bquery_number%5D=2
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = 58 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_query` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_query` WHERE ( `type_id` = 58 ) AND ( `date` = 1491028539 ) AND ( `name` = '11' ) AND ( `query_number` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T14:56:11+08:00 ] 183.13.190.242 /wz170315/index.php?m=query
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = 58 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.015625s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_input` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `type_id` = 58 ) AND ( `show_switch` = 2 ) AND (  (`input_pid` is null)  ) ORDER BY date asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `type_id` = 58 ) AND ( `show_switch` = 2 ) AND ( `required_switch` = 2 ) AND (  (`input_pid` is null)  ) ORDER BY date asc  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\wz170315\Index\Runtime\Cache\5d34b54a09dc542788cbf19dbd81abd8.php 第 67 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T14:56:14+08:00 ] 183.13.190.242 /wz170315/index.php?m=query&a=details&classify_id=&data%5Bname%5D=1&data%5Bquery_number%5D=22
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = 58 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.015625s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_query` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_query` WHERE ( `name` = '1' ) AND ( `query_number` = '22' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T14:56:24+08:00 ] 183.13.190.242 /wz170315/index.php?m=query&a=details&classify_id=&data%5Bname%5D=11&data%5Bquery_number%5D=2
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = 58 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_query` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `index_query` WHERE ( `name` = '11' ) AND ( `query_number` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T14:57:10+08:00 ] 183.13.190.242 /wz170315/index.php?m=query&a=details&classify_id=&data%5Bname%5D=11&data%5Bquery_number%5D=2
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = 58 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_query` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_query` WHERE ( `name` = '11' ) AND ( `query_number` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T14:57:18+08:00 ] 183.13.190.242 /wz170315/index.php?m=query&a=details&classify_id=&data%5Bname%5D=11&data%5Bquery_number%5D=2
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = 58 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'query' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_query` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_query` WHERE ( `name` = '11' ) AND ( `query_number` = '2' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T15:04:14+08:00 ] 183.13.190.242 /wz170315/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T15:11:28+08:00 ] 183.13.190.242 /wz170315/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.015625s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T15:11:30+08:00 ] 183.13.190.242 /wz170315/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T15:12:05+08:00 ] 183.13.190.242 /wz170315/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T15:12:33+08:00 ] 183.13.190.242 /wz170315/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.015625s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T15:12:37+08:00 ] 183.13.190.242 /wz170315/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.015625s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T15:12:41+08:00 ] 183.13.190.242 /wz170315/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T15:12:45+08:00 ] 183.13.190.242 /wz170315/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.015625s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T15:15:10+08:00 ] 183.13.190.242 /wz170315/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T15:16:01+08:00 ] 183.13.190.242 /wz170315/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T15:18:41+08:00 ] 183.13.190.242 /wz170315/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T15:19:15+08:00 ] 183.13.190.242 /wz170315/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.015625s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T15:22:31+08:00 ] 183.13.190.242 /wz170315/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.015625s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T15:32:31+08:00 ] 183.13.190.242 /wz170315/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T15:33:21+08:00 ] 183.13.190.242 /wz170315/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.015625s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T15:33:44+08:00 ] 183.13.190.242 /wz170315/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.015625s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T15:34:09+08:00 ] 183.13.190.242 /wz170315/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.015625s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T15:34:38+08:00 ] 183.13.190.242 /wz170315/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.015625s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T15:34:40+08:00 ] 183.13.190.242 /wz170315/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = null ) LIMIT 1   [ RunTime:0.015625s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T16:46:45+08:00 ] 183.13.190.242 /wz170315/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T16:47:12+08:00 ] 183.13.190.242 /wz170315/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T16:48:11+08:00 ] 183.13.190.242 /wz170315/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.015625s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+

@@ -1,0 +1,24 @@
+[ 2017-03-27T02:11:18+08:00 ] 140.207.185.111 /wz170315/admin.php?m%3Dinput%26a%3Dchild_add%26type_id%3D57%26input_pid%3D485%26time%3D1490537434
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: onlymsg D:\WWW\wz170315\ThinkPHP\Common\common.php 第 847 行.
+NOTIC: [8] Undefined variable: onlymsg D:\WWW\wz170315\ThinkPHP\Common\common.php 第 879 行.
+
+[ 2017-03-27T04:09:32+08:00 ] 101.226.51.226 /wz170315/admin.php?m%3Dmember%26a%3Dindex%26admin_classify_id%3D16%26export_content_id%3D1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: onlymsg D:\WWW\wz170315\ThinkPHP\Common\common.php 第 847 行.
+NOTIC: [8] Undefined variable: onlymsg D:\WWW\wz170315\ThinkPHP\Common\common.php 第 879 行.
+
+[ 2017-03-27T09:23:09+08:00 ] 101.226.33.225 /wz170315/admin.php?m%253Dcontent%2526a%253Dindex%2526type_id%253D3%2526classify_id%253D353
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: onlymsg D:\WWW\wz170315\ThinkPHP\Common\common.php 第 847 行.
+NOTIC: [8] Undefined variable: onlymsg D:\WWW\wz170315\ThinkPHP\Common\common.php 第 879 行.
+

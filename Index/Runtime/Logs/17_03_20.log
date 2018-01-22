@@ -1,0 +1,569 @@
+[ 2017-03-20T18:24:28+08:00 ] 183.13.191.26 /wz170315/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.015625s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-20T22:32:06+08:00 ] 140.205.201.33 /wz170315/index.php?m=goods&a=index&classify_id=294
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'goods' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = 294 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 294 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM index_goods n,index_relevance r WHERE ( r.classify_id =294 and r.content_id=n.goods_id ) ORDER BY date desc LIMIT 0,12   [ RunTime:0.015625s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\wz170315\Index\Runtime\Cache\64ce53e56c6766e0ec0d0cbfe175b0a0.php 第 11 行.
+NOTIC: [8] Object of class Model could not be converted to int D:\WWW\wz170315\Index\Tpl\public\page.php 第 6 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-20T22:37:16+08:00 ] 140.205.201.33 /wz170315/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.015625s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-20T22:45:19+08:00 ] 140.205.201.33 /wz170315/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_relevance` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `classify_id` FROM `index_relevance` WHERE ( `content_id` = 0 ) AND ( `main_id` = 1 ) AND ( `type_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'Index' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-20T22:45:54+08:00 ] 140.205.201.33 /wz170315/index.php?m=goods&a=index&classify_id=294
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'goods' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = 294 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 294 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM index_goods n,index_relevance r WHERE ( r.classify_id =294 and r.content_id=n.goods_id ) ORDER BY date desc LIMIT 0,12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\wz170315\Index\Runtime\Cache\64ce53e56c6766e0ec0d0cbfe175b0a0.php 第 11 行.
+NOTIC: [8] Object of class Model could not be converted to int D:\WWW\wz170315\Index\Tpl\public\page.php 第 6 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.015625s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-03-20T22:46:01+08:00 ] 140.205.201.33 /wz170315/index.php?m=goodsi3943974i&a=index&classify_id=294
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:goodsi3943974i
+
+[ 2017-03-20T22:46:43+08:00 ] 140.205.201.33 /wz170315/index.php?m=goods&a=indexi3943974i&classify_id=294
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:indexi3943974i
+
+[ 2017-03-20T22:48:07+08:00 ] 140.205.201.33 /wz170315/index.php?m=goods&a=index&classify_id=294i3943974i
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'goods' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = 294 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 294 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM index_goods n,index_relevance r WHERE ( r.classify_id =294i3943974i and r.content_id=n.goods_id ) ORDER BY date desc LIMIT 0,12   [ RunTime:0.000000s ]
+ERR: 1054:Unknown column '294i3943974i' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM index_goods n,index_relevance r WHERE ( r.classify_id =294i3943974i and r.content_id=n.goods_id ) ORDER BY date desc LIMIT 0,12  
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\wz170315\Index\Runtime\Cache\64ce53e56c6766e0ec0d0cbfe175b0a0.php 第 11 行.
+NOTIC: [8] Object of class Model could not be converted to int D:\WWW\wz170315\Index\Tpl\public\page.php 第 6 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-20T22:58:06+08:00 ] 140.205.201.33 /wz170315/index.php?m='%22/%3E%3Cimg/src/onerror=alert()%3E&a=index&classify_id=294
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: group D:\WWW\wz170315\ThinkPHP\Lib\Core\App.class.php 第 102 行.
+ERR: 无法加载模块:'"/>
+
+[ 2017-03-20T23:06:19+08:00 ] 140.205.201.33 /wz170315/index.php?m=goods&a='%22/%3E%3Cimg/src/onerror=alert()%3E&classify_id=294
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:'"/>
+
+[ 2017-03-20T23:07:07+08:00 ] 140.205.201.33 /wz170315/index.php?m=goods&a=index&classify_id='%22/%3E%3Cimg/src/onerror=alert()%3E
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'goods' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM index_goods n,index_relevance r WHERE ( r.classify_id ='"/><img/src/onerror=alert()> and r.content_id=n.goods_id ) ORDER BY date desc LIMIT 0,12   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''"/><img/src/onerror=alert()> and r.content_id=n.goods_id ) ORDER BY date desc L' at line 1
+ [ SQL语句 ] : SELECT * FROM index_goods n,index_relevance r WHERE ( r.classify_id ='"/><img/src/onerror=alert()> and r.content_id=n.goods_id ) ORDER BY date desc LIMIT 0,12  
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\wz170315\Index\Runtime\Cache\64ce53e56c6766e0ec0d0cbfe175b0a0.php 第 11 行.
+NOTIC: [8] Object of class Model could not be converted to int D:\WWW\wz170315\Index\Tpl\public\page.php 第 6 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-20T23:07:13+08:00 ] 140.205.201.33 /wz170315/index.php?m=%27%22%2f%3E%3Cimg%2fsrc%2fonerror%3Dalert%28%29%3E&a=index&classify_id=294
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: group D:\WWW\wz170315\ThinkPHP\Lib\Core\App.class.php 第 102 行.
+ERR: 无法加载模块:'"/>
+
+[ 2017-03-20T23:07:17+08:00 ] 140.205.201.33 /wz170315/index.php?m=goods&a=%27%22%2f%3E%3Cimg%2fsrc%2fonerror%3Dalert%28%29%3E&classify_id=294
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:'"/>
+
+[ 2017-03-20T23:07:18+08:00 ] 140.205.201.33 /wz170315/index.php?m=goods&a=index&classify_id=%27%22%2f%3E%3Cimg%2fsrc%2fonerror%3Dalert%28%29%3E
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'goods' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.015625s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM index_goods n,index_relevance r WHERE ( r.classify_id ='"/><img/src/onerror=alert()> and r.content_id=n.goods_id ) ORDER BY date desc LIMIT 0,12   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''"/><img/src/onerror=alert()> and r.content_id=n.goods_id ) ORDER BY date desc L' at line 1
+ [ SQL语句 ] : SELECT * FROM index_goods n,index_relevance r WHERE ( r.classify_id ='"/><img/src/onerror=alert()> and r.content_id=n.goods_id ) ORDER BY date desc LIMIT 0,12  
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\wz170315\Index\Runtime\Cache\64ce53e56c6766e0ec0d0cbfe175b0a0.php 第 11 行.
+NOTIC: [8] Object of class Model could not be converted to int D:\WWW\wz170315\Index\Tpl\public\page.php 第 6 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-20T23:07:20+08:00 ] 140.205.201.33 /wz170315/index.php?m=%2527%2522%252f%253E%253Cimg%252fsrc%252fonerror%253Dalert%2528%2529%253E&a=index&classify_id=294
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: group D:\WWW\wz170315\ThinkPHP\Lib\Core\App.class.php 第 102 行.
+ERR: 无法加载模块:%27%22%2f%3E%3Cimg%2fsrc%2fonerror%3Dalert%28%29%3E
+
+[ 2017-03-20T23:07:22+08:00 ] 140.205.201.33 /wz170315/index.php?m=goods&a=%2527%2522%252f%253E%253Cimg%252fsrc%252fonerror%253Dalert%2528%2529%253E&classify_id=294
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:%27%22%2f%3E%3Cimg%2fsrc%2fonerror%3Dalert%28%29%3E
+
+[ 2017-03-20T23:07:23+08:00 ] 140.205.201.33 /wz170315/index.php?m=goods&a=index&classify_id=%2527%2522%252f%253E%253Cimg%252fsrc%252fonerror%253Dalert%2528%2529%253E
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'goods' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM index_goods n,index_relevance r WHERE ( r.classify_id =%27%22%2f%3E%3Cimg%2fsrc%2fonerror%3Dalert%28%29%3E and r.content_id=n.goods_id ) ORDER BY date desc LIMIT 0,12   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%27%22%2f%3E%3Cimg%2fsrc%2fonerror%3Dalert%28%29%3E and r.content_id=n.goods_id ' at line 1
+ [ SQL语句 ] : SELECT * FROM index_goods n,index_relevance r WHERE ( r.classify_id =%27%22%2f%3E%3Cimg%2fsrc%2fonerror%3Dalert%28%29%3E and r.content_id=n.goods_id ) ORDER BY date desc LIMIT 0,12  
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\wz170315\Index\Runtime\Cache\64ce53e56c6766e0ec0d0cbfe175b0a0.php 第 11 行.
+NOTIC: [8] Object of class Model could not be converted to int D:\WWW\wz170315\Index\Tpl\public\page.php 第 6 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.015625s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-20T23:09:05+08:00 ] 140.205.201.33 /wz170315/index.php?m=goods&a=index&classify_id=294
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'goods' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = 294 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 294 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM index_goods n,index_relevance r WHERE ( r.classify_id =294 and r.content_id=n.goods_id ) ORDER BY date desc LIMIT 0,12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\wz170315\Index\Runtime\Cache\64ce53e56c6766e0ec0d0cbfe175b0a0.php 第 11 行.
+NOTIC: [8] Object of class Model could not be converted to int D:\WWW\wz170315\Index\Tpl\public\page.php 第 6 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-03-20T23:11:21+08:00 ] 140.205.201.33 /wz170315/index.php?m=PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==&a=index&classify_id=294
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: group D:\WWW\wz170315\ThinkPHP\Lib\Core\App.class.php 第 102 行.
+ERR: 无法加载模块:PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==
+
+[ 2017-03-20T23:13:51+08:00 ] 140.205.201.33 /wz170315/index.php?m=goods&a=PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==&classify_id=294
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==
+
+[ 2017-03-20T23:17:04+08:00 ] 140.205.201.33 /wz170315/index.php?m=goods&a=index&classify_id=PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'goods' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM index_goods n,index_relevance r WHERE ( r.classify_id =PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg== and r.content_id=n.goods_id ) ORDER BY date desc LIMIT 0,12   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '== and r.content_id=n.goods_id ) ORDER BY date desc LIMIT 0,12' at line 1
+ [ SQL语句 ] : SELECT * FROM index_goods n,index_relevance r WHERE ( r.classify_id =PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg== and r.content_id=n.goods_id ) ORDER BY date desc LIMIT 0,12  
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\wz170315\Index\Runtime\Cache\64ce53e56c6766e0ec0d0cbfe175b0a0.php 第 11 行.
+NOTIC: [8] Object of class Model could not be converted to int D:\WWW\wz170315\Index\Tpl\public\page.php 第 6 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.015625s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-20T23:19:42+08:00 ] 140.205.201.33 /wz170315/index.php?m=amF2YXNjcmlwdDpwcm9tcHQoMTExKTt4&a=index&classify_id=294
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:amF2YXNjcmlwdDpwcm9tcHQoMTExKTt4
+
+[ 2017-03-20T23:21:08+08:00 ] 140.205.201.33 /wz170315/index.php?m=goods&a=amF2YXNjcmlwdDpwcm9tcHQoMTExKTt4&classify_id=294
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:amF2YXNjcmlwdDpwcm9tcHQoMTExKTt4
+
+[ 2017-03-20T23:24:56+08:00 ] 140.205.201.33 /wz170315/index.php?m=goods&a=index&classify_id=amF2YXNjcmlwdDpwcm9tcHQoMTExKTt4
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'goods' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM index_goods n,index_relevance r WHERE ( r.classify_id =amF2YXNjcmlwdDpwcm9tcHQoMTExKTt4 and r.content_id=n.goods_id ) ORDER BY date desc LIMIT 0,12   [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'amF2YXNjcmlwdDpwcm9tcHQoMTExKTt4' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM index_goods n,index_relevance r WHERE ( r.classify_id =amF2YXNjcmlwdDpwcm9tcHQoMTExKTt4 and r.content_id=n.goods_id ) ORDER BY date desc LIMIT 0,12  
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\wz170315\Index\Runtime\Cache\64ce53e56c6766e0ec0d0cbfe175b0a0.php 第 11 行.
+NOTIC: [8] Object of class Model could not be converted to int D:\WWW\wz170315\Index\Tpl\public\page.php 第 6 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-20T23:30:40+08:00 ] 140.205.201.33 /wz170315/index.php?m=goodsi3943974i&a=index&classify_id=294
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:goodsi3943974i
+
+[ 2017-03-20T23:39:45+08:00 ] 140.205.201.33 /wz170315/index.php?m=goods&a=indexi3943974i&classify_id=294
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:indexi3943974i
+
+[ 2017-03-20T23:44:13+08:00 ] 140.205.201.33 /wz170315/index.php?m=goods&a=index&classify_id=294i3943974i
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'goods' ) LIMIT 1   [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.000000s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = 294 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 294 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM index_goods n,index_relevance r WHERE ( r.classify_id =294i3943974i and r.content_id=n.goods_id ) ORDER BY date desc LIMIT 0,12   [ RunTime:0.000000s ]
+ERR: 1054:Unknown column '294i3943974i' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM index_goods n,index_relevance r WHERE ( r.classify_id =294i3943974i and r.content_id=n.goods_id ) ORDER BY date desc LIMIT 0,12  
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\wz170315\Index\Runtime\Cache\64ce53e56c6766e0ec0d0cbfe175b0a0.php 第 11 行.
+NOTIC: [8] Object of class Model could not be converted to int D:\WWW\wz170315\Index\Tpl\public\page.php 第 6 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-20T23:45:38+08:00 ] 140.205.201.33 /wz170315/index.php?m='%22+onmouseover=alert()+d='%22&a=index&classify_id=294
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: group D:\WWW\wz170315\ThinkPHP\Lib\Core\App.class.php 第 102 行.
+ERR: 无法加载模块:'" onmouseover=alert() d='"
+
+[ 2017-03-20T23:49:17+08:00 ] 140.205.201.33 /wz170315/index.php?m=goods&a='%22+onmouseover=alert()+d='%22&classify_id=294
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:'" onmouseover=alert() d='"
+
+[ 2017-03-20T23:54:24+08:00 ] 140.205.201.33 /wz170315/index.php?m=goods&a=index&classify_id='%22+onmouseover=alert()+d='%22
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.000000s ]
+SQL: SELECT `type_id` FROM `index_classify_type` WHERE ( `table_name` = 'goods' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.015625s ]
+SQL: SELECT `level_id`,`classify_id`,`classify_pid` FROM `index_classify` WHERE ( `classify_id` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_cart` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `index_cart` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_account` [ RunTime:0.000000s ]
+SQL: SELECT `balance` FROM `index_account` WHERE ( `member_id` = null ) ORDER BY account_id desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_id` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM index_goods n,index_relevance r WHERE ( r.classify_id ='" onmouseover=alert() d='" and r.content_id=n.goods_id ) ORDER BY date desc LIMIT 0,12   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '" and r.content_id=n.goods_id ) ORDER BY date desc LIMIT 0,12' at line 1
+ [ SQL语句 ] : SELECT * FROM index_goods n,index_relevance r WHERE ( r.classify_id ='" onmouseover=alert() d='" and r.content_id=n.goods_id ) ORDER BY date desc LIMIT 0,12  
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\wz170315\Index\Runtime\Cache\64ce53e56c6766e0ec0d0cbfe175b0a0.php 第 11 行.
+NOTIC: [8] Object of class Model could not be converted to int D:\WWW\wz170315\Index\Tpl\public\page.php 第 6 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-20T23:56:45+08:00 ] 140.205.201.33 /wz170315/index.php?m=%27%22%20onmouseover%3Dalert%28%29%20d%3D%27%22&a=index&classify_id=294
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: group D:\WWW\wz170315\ThinkPHP\Lib\Core\App.class.php 第 102 行.
+ERR: 无法加载模块:'" onmouseover=alert() d='"
+
+[ 2017-03-20T23:57:55+08:00 ] 140.205.201.33 /wz170315/index.php?m=goods&a=%27%22%20onmouseover%3Dalert%28%29%20d%3D%27%22&classify_id=294
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:'" onmouseover=alert() d='"
+

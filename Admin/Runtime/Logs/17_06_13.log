@@ -1,0 +1,264 @@
+[ 2017-06-13T17:28:49+08:00 ] 0.0.0.0 /v5.2/admin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_function_switch` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `index_function_switch` WHERE ( `function_switch_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `index_user_page` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `index_user_page` WHERE ( `user_id` = 1 )  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\v5.2\Admin\Tpl\public\head.php 第 17 行.
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `index_site` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `index_admin_classify` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `index_admin_classify` WHERE ( `level_id` = 2 ) ORDER BY date asc  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `index_user_classify` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `index_user_classify` WHERE ( `user_id` = 1 ) AND ( `classify_id` = 2 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `index_user_classify` WHERE ( `user_id` = 1 ) AND ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_user_classify` WHERE ( `user_id` = 1 ) AND ( `classify_id` = 16 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_user_classify` WHERE ( `user_id` = 1 ) AND ( `classify_id` = 15 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_user_classify` WHERE ( `user_id` = 1 ) AND ( `classify_id` = 20 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `index_user_classify` WHERE ( `user_id` = 1 ) AND ( `classify_id` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_user_classify` WHERE ( `user_id` = 1 ) AND ( `classify_id` = 5 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_user_classify` WHERE ( `user_id` = 1 ) AND ( `classify_id` = 23 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_admin_classify` WHERE ( `classify_pid` = 3 ) ORDER BY date asc  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\v5.2\Admin\Tpl\public\top.php 第 36 行.
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_pid` = 1 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `level_id` = 2 ) ORDER BY date asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_pid` = 2 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_pid` = 4 )  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\v5.2\Admin\Tpl\public\left.php 第 17 行.
+NOTIC: [8] Undefined index: order_site_id D:\WWW\v5.2\Admin\Runtime\Cache\d74b1b5354fc9f05c91cb0d6ad6a9473.php 第 5 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.055003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-13T17:29:18+08:00 ] 0.0.0.0 /v5.2/admin.php?m=site&a=function_config&admin_classify_id=23
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\WWW\v5.2\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\WWW\v5.2\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\WWW\v5.2\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_function_switch` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `index_function_switch` WHERE ( `function_switch_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_user_page` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `index_user_page` WHERE ( `user_id` = 1 )  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\v5.2\Admin\Tpl\public\head.php 第 17 行.
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `index_site` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_site`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_admin_classify` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `index_admin_classify` WHERE ( `level_id` = 2 ) ORDER BY date asc  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `index_user_classify` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `index_user_classify` WHERE ( `user_id` = 1 ) AND ( `classify_id` = 2 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `index_user_classify` WHERE ( `user_id` = 1 ) AND ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_user_classify` WHERE ( `user_id` = 1 ) AND ( `classify_id` = 16 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_user_classify` WHERE ( `user_id` = 1 ) AND ( `classify_id` = 15 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_user_classify` WHERE ( `user_id` = 1 ) AND ( `classify_id` = 20 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `index_user_classify` WHERE ( `user_id` = 1 ) AND ( `classify_id` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_user_classify` WHERE ( `user_id` = 1 ) AND ( `classify_id` = 5 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_user_classify` WHERE ( `user_id` = 1 ) AND ( `classify_id` = 23 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_admin_classify` WHERE ( `classify_pid` = 23 ) ORDER BY date asc  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\v5.2\Admin\Tpl\public\top.php 第 36 行.
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `level_id` = 2 ) ORDER BY date asc  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_pid` = 2 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_pid` = 4 )  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\v5.2\Admin\Tpl\public\left.php 第 17 行.
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.002000s ]
+SQL: SELECT `table_name` FROM `index_classify_type` WHERE ( `type_id` = 57 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `index_function_switch` WHERE ( `function_switch_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_input` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `index_input` WHERE ( `type_id` = 57 ) AND ( `edit_switch` = 2 ) AND (  (`input_pid` is null)  ) ORDER BY date asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `input_pid` = 482 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `input_pid` = 479 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `input_pid` = 485 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `input_pid` = 486 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `input_pid` = 501 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `input_pid` = 504 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `input_pid` = 507 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `input_pid` = 510 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `input_pid` = 513 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_wxpay` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `index_wxpay` WHERE ( `wxpay_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `type_id` = 54 ) AND ( `edit_switch` = 2 ) AND (  (`input_pid` is null)  ) ORDER BY date asc  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `index_alipay` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `index_alipay` WHERE ( `alipay_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `type_id` = 56 ) AND ( `edit_switch` = 2 ) AND (  (`input_pid` is null)  ) ORDER BY date asc  [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.060003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-13T17:29:24+08:00 ] 0.0.0.0 /v5.2/admin.php?m=cms&a=edit_save
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.003000s ]
+SQL: SELECT `table_name` FROM `index_classify_type` WHERE ( `type_id` = 57 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_function_switch` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `index_function_switch` WHERE ( `function_switch_id` = 1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `index_input` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `index_input` WHERE ( `type_id` = 57 ) AND ( `edit_switch` = 2 ) AND ( `input_type_id` = 4 )  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\v5.2\Admin\Lib\Action\cmsAction.class.php 第 51 行.
+SQL: SELECT * FROM `index_input` WHERE ( `type_id` = 57 ) AND ( `edit_switch` = 2 ) AND ( `input_type_id` = 7 )  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\v5.2\Admin\Lib\Action\cmsAction.class.php 第 56 行.
+SQL: SELECT * FROM `index_input` WHERE ( `type_id` = 57 ) AND ( `edit_switch` = 2 ) AND ( `input_type_id` = 8 )  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\v5.2\Admin\Lib\Action\cmsAction.class.php 第 65 行.
+SQL: UPDATE `index_function_switch` SET `sms_switch`='1',`xls_content`='1',`xls_member`='1',`xls_order`='1',`batch_shared`='1',`batch_move`='1',`batch_copy`='2',`batch_delete`='2',`left_navigation`='2' WHERE ( function_switch_id = 1 ) [ RunTime:0.001000s ]
+
+[ 2017-06-13T17:29:24+08:00 ] 0.0.0.0 /v5.2/admin.php?m=site&a=function_config&admin_classify_id=23
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\WWW\v5.2\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\WWW\v5.2\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\WWW\v5.2\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_function_switch` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `index_function_switch` WHERE ( `function_switch_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `index_user_page` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `index_user_page` WHERE ( `user_id` = 1 )  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\v5.2\Admin\Tpl\public\head.php 第 17 行.
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `index_site` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `index_site`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_admin_classify` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `index_admin_classify` WHERE ( `level_id` = 2 ) ORDER BY date asc  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `index_user_classify` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `index_user_classify` WHERE ( `user_id` = 1 ) AND ( `classify_id` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_user_classify` WHERE ( `user_id` = 1 ) AND ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_user_classify` WHERE ( `user_id` = 1 ) AND ( `classify_id` = 16 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_user_classify` WHERE ( `user_id` = 1 ) AND ( `classify_id` = 15 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_user_classify` WHERE ( `user_id` = 1 ) AND ( `classify_id` = 20 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_user_classify` WHERE ( `user_id` = 1 ) AND ( `classify_id` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_user_classify` WHERE ( `user_id` = 1 ) AND ( `classify_id` = 5 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_user_classify` WHERE ( `user_id` = 1 ) AND ( `classify_id` = 23 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_admin_classify` WHERE ( `classify_pid` = 23 ) ORDER BY date asc  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\v5.2\Admin\Tpl\public\top.php 第 36 行.
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `level_id` = 2 ) ORDER BY date asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_pid` = 2 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_pid` = 4 )  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\v5.2\Admin\Tpl\public\left.php 第 17 行.
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.005000s ]
+SQL: SELECT `table_name` FROM `index_classify_type` WHERE ( `type_id` = 57 ) LIMIT 1   [ RunTime:0.003000s ]
+SQL: SELECT * FROM `index_function_switch` WHERE ( `function_switch_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `index_input` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `index_input` WHERE ( `type_id` = 57 ) AND ( `edit_switch` = 2 ) AND (  (`input_pid` is null)  ) ORDER BY date asc  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `input_pid` = 482 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `input_pid` = 479 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `input_pid` = 485 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `input_pid` = 486 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `input_pid` = 501 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `input_pid` = 504 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `input_pid` = 507 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `input_pid` = 510 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `input_pid` = 513 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_wxpay` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `index_wxpay` WHERE ( `wxpay_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `type_id` = 54 ) AND ( `edit_switch` = 2 ) AND (  (`input_pid` is null)  ) ORDER BY date asc  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `index_alipay` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `index_alipay` WHERE ( `alipay_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `type_id` = 56 ) AND ( `edit_switch` = 2 ) AND (  (`input_pid` is null)  ) ORDER BY date asc  [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.091006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091006s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-13T17:29:34+08:00 ] 0.0.0.0 /v5.2/admin.php?m=site&a=function_config&admin_classify_id=23
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\WWW\v5.2\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\WWW\v5.2\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\WWW\v5.2\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `index_function_switch` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `index_function_switch` WHERE ( `function_switch_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_user_page` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `index_user_page` WHERE ( `user_id` = 1 )  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\v5.2\Admin\Tpl\public\head.php 第 17 行.
+SQL: SHOW COLUMNS FROM `index_site` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `index_site` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `index_site`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_admin_classify` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `index_admin_classify` WHERE ( `level_id` = 2 ) ORDER BY date asc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_user_classify` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `index_user_classify` WHERE ( `user_id` = 1 ) AND ( `classify_id` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_user_classify` WHERE ( `user_id` = 1 ) AND ( `classify_id` = 3 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `index_user_classify` WHERE ( `user_id` = 1 ) AND ( `classify_id` = 16 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_user_classify` WHERE ( `user_id` = 1 ) AND ( `classify_id` = 15 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_user_classify` WHERE ( `user_id` = 1 ) AND ( `classify_id` = 20 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_user_classify` WHERE ( `user_id` = 1 ) AND ( `classify_id` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_user_classify` WHERE ( `user_id` = 1 ) AND ( `classify_id` = 5 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `index_user_classify` WHERE ( `user_id` = 1 ) AND ( `classify_id` = 23 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_admin_classify` WHERE ( `classify_pid` = 23 ) ORDER BY date asc  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\v5.2\Admin\Tpl\public\top.php 第 36 行.
+SQL: SHOW COLUMNS FROM `index_classify` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `level_id` = 2 ) ORDER BY date asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_pid` = 2 )  [ RunTime:0.001001s ]
+SQL: SELECT * FROM `index_classify` WHERE ( `classify_pid` = 4 )  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\v5.2\Admin\Tpl\public\left.php 第 17 行.
+SQL: SELECT * FROM `index_site` WHERE ( `version_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `index_classify_type` [ RunTime:0.005000s ]
+SQL: SELECT `table_name` FROM `index_classify_type` WHERE ( `type_id` = 57 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `index_function_switch` WHERE ( `function_switch_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `index_input` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `type_id` = 57 ) AND ( `edit_switch` = 2 ) AND (  (`input_pid` is null)  ) ORDER BY date asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `input_pid` = 482 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `input_pid` = 479 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `input_pid` = 485 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `input_pid` = 486 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `input_pid` = 501 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `input_pid` = 504 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `input_pid` = 507 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `input_pid` = 510 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `input_pid` = 513 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `index_wxpay` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `index_wxpay` WHERE ( `wxpay_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `type_id` = 54 ) AND ( `edit_switch` = 2 ) AND (  (`input_pid` is null)  ) ORDER BY date asc  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `index_alipay` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `index_alipay` WHERE ( `alipay_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `index_input` WHERE ( `type_id` = 56 ) AND ( `edit_switch` = 2 ) AND (  (`input_pid` is null)  ) ORDER BY date asc  [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.063004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
